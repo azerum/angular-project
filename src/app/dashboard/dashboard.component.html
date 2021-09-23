@@ -1,0 +1,11 @@
+<h3>Dashboard</h3>
+
+<ul>
+  <li *ngFor="let link of links">
+    <a [routerLink]="link.path">
+      {{link.title}}
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
