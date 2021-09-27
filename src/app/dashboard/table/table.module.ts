@@ -1,24 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { MatTableModule } from "@angular/material/table";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
-import { FirstComponent } from './first.component';
+import { TableComponent } from './table.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: FirstComponent,
-  },
+    component: TableComponent
+  }
 ];
 
 @NgModule({
   declarations: [
-    FirstComponent,
+    TableComponent
   ],
 
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    MatTableModule,
+    MatPaginatorModule,
   ]
 })
-export class FirstModule { }
+export class TableModule { }
