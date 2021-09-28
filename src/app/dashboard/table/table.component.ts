@@ -3,7 +3,7 @@ import { MatTable, MatTableDataSource } from "@angular/material/table";
 import { MatPaginator } from "@angular/material/paginator";
 
 import { StarWarsService } from "../../shared/star-wars.service";
-import { Person } from "../../shared/interfaces";
+import { Person } from "../../shared/start-wars-types";
 
 @Component({
   selector: 'app-table',
