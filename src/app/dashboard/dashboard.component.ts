@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-interface NavigationLink {
-  path: string,
-  title: string,
-}
+import { NavigationLink } from "./navigation-link";
 
 @Component({
   selector: 'app-dashboard',
@@ -11,9 +7,9 @@ interface NavigationLink {
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  public links: NavigationLink[] = [
-    { path: 'table', title: 'Table' },
-    { path: 'second', title: 'Second' },
-    { path: 'third', title: 'Third' },
+  public navLinks: NavigationLink[] = [
+    { routerLink: 'table', title: 'Table' },
+    { routerLink: 'second', title: 'Second' },
+    { routerLink: 'third', title: 'Third' },
   ];
 }

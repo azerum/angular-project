@@ -1,7 +1,15 @@
-<h3>Dashboard</h3>
+<h2>Dashboard</h2>
 
 <nav mat-tab-nav-bar>
-
+  <a
+    mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.routerLink"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive"
+  >
+    {{ link.title }}
+  </a>
 </nav>
 
 <router-outlet></router-outlet>
