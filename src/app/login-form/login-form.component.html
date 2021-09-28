@@ -1,8 +1,19 @@
-<div class="wrapper">
-  <form>
-    <input type="email" name="email" [(ngModel)]="email">
-    <input type="password" name="password" [(ngModel)]="password">
+<div class="centering-wrapper">
+  <form class="mat-elevation-z3">
+    <h3>Welcome back</h3>
 
-    <button type="submit" (click)="login()">Login</button>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" name="email" [(ngModel)]="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" name="password" [(ngModel)]="password">
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" type="submit" (click)="login()">
+      Login
+    </button>
   </form>
 </div>

@@ -1,6 +1,32 @@
-form > input {
-  display: block;
+.centering-wrapper {
+  min-height: 100vh;
+  margin: 0;
 
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-width: 400px;
+  height: auto;
+
+  padding: 0.5rem 2rem 1rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  align-self: flex-end;
+}
+
+button, input {
+  font-size: 16px;
 }
