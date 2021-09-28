@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
-import { MatTableModule } from "@angular/material/table";
+import { NgModule } from '@angular/core';
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatTableModule } from "@angular/material/table";
+import { RouterModule, Routes } from '@angular/router';
 
 import { TableComponent } from './table.component';
 

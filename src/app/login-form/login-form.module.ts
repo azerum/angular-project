@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from "@angular/router";
+import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
-import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
+import { MatInputModule } from "@angular/material/input";
+import { RouterModule, Routes } from "@angular/router";
 
 import { LoginFormComponent } from "./login-form.component";
 
